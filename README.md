@@ -8,6 +8,8 @@ npm i musl-sysroot
 
 The compiler runtime libraries ship with `llvm-runtime` itself. Link with `--rtlib=compiler-rt`, `--unwindlib=libunwind`, and `-stdlib=libc++`.
 
+The sysroots only install on Linux hosts, as the compiler runtime libraries for musl ship with the Linux build of `llvm-runtime`.
+
 ## Usage
 
 ```js
