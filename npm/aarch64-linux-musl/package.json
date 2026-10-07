@@ -24,6 +24,9 @@
     "url": "https://github.com/holepunchto/musl-sysroot/issues"
   },
   "homepage": "https://github.com/holepunchto/musl-sysroot#readme",
+  "os": [
+    "linux"
+  ],
   "dependencies": {
     "require-asset": "^1.2.3"
   }
