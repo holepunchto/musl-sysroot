@@ -1,6 +1,6 @@
 {
   "name": "musl-sysroot-i386-linux-musl",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "The musl sysroot for i386-linux-musl",
   "exports": {
     ".": "./index.js",

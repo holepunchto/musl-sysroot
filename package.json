@@ -1,6 +1,6 @@
 {
   "name": "musl-sysroot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prebuilt musl sysroots for the llvm-runtime compiler",
   "exports": {
     ".": "./index.js",
@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/holepunchto/musl-sysroot#readme",
   "optionalDependencies": {
-    "musl-sysroot-aarch64-linux-musl": "0.0.0",
-    "musl-sysroot-arm-linux-musleabi": "0.0.0",
-    "musl-sysroot-i386-linux-musl": "0.0.0",
-    "musl-sysroot-mips-linux-musl": "0.0.0",
-    "musl-sysroot-mips-linux-muslsf": "0.0.0",
-    "musl-sysroot-mipsel-linux-musl": "0.0.0",
-    "musl-sysroot-mipsel-linux-muslsf": "0.0.0",
-    "musl-sysroot-x86_64-linux-musl": "0.0.0"
+    "musl-sysroot-aarch64-linux-musl": "0.1.1",
+    "musl-sysroot-arm-linux-musleabi": "0.1.1",
+    "musl-sysroot-i386-linux-musl": "0.1.1",
+    "musl-sysroot-mips-linux-musl": "0.1.1",
+    "musl-sysroot-mips-linux-muslsf": "0.1.1",
+    "musl-sysroot-mipsel-linux-musl": "0.1.1",
+    "musl-sysroot-mipsel-linux-muslsf": "0.1.1",
+    "musl-sysroot-x86_64-linux-musl": "0.1.1"
   },
   "devDependencies": {
     "cmake-fetch": "^1.4.9",

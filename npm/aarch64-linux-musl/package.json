@@ -1,6 +1,6 @@
 {
   "name": "musl-sysroot-aarch64-linux-musl",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "The musl sysroot for aarch64-linux-musl",
   "exports": {
     ".": "./index.js",

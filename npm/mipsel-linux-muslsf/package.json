@@ -1,6 +1,6 @@
 {
   "name": "musl-sysroot-mipsel-linux-muslsf",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "The musl sysroot for mipsel-linux-muslsf",
   "exports": {
     ".": "./index.js",
