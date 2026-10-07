@@ -1,0 +1,30 @@
+{
+  "name": "musl-sysroot-aarch64-linux-musl",
+  "version": "0.0.0",
+  "description": "The musl sysroot for aarch64-linux-musl",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json"
+  },
+  "files": [
+    "NOTICE",
+    "index.js",
+    "usr"
+  ],
+  "assets": [
+    "usr"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/musl-sysroot.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/musl-sysroot/issues"
+  },
+  "homepage": "https://github.com/holepunchto/musl-sysroot#readme",
+  "dependencies": {
+    "require-asset": "^1.2.3"
+  }
+}
