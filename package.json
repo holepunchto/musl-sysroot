@@ -1,0 +1,46 @@
+{
+  "name": "musl-sysroot",
+  "version": "0.0.0",
+  "description": "Prebuilt musl sysroots for the llvm-runtime compiler",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json"
+  },
+  "files": [
+    "NOTICE",
+    "index.js"
+  ],
+  "workspaces": [
+    "npm/*"
+  ],
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/musl-sysroot.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/musl-sysroot/issues"
+  },
+  "homepage": "https://github.com/holepunchto/musl-sysroot#readme",
+  "optionalDependencies": {
+    "musl-sysroot-aarch64-linux-musl": "0.0.0",
+    "musl-sysroot-arm-linux-musleabi": "0.0.0",
+    "musl-sysroot-i386-linux-musl": "0.0.0",
+    "musl-sysroot-mips-linux-musl": "0.0.0",
+    "musl-sysroot-mips-linux-muslsf": "0.0.0",
+    "musl-sysroot-mipsel-linux-musl": "0.0.0",
+    "musl-sysroot-mipsel-linux-muslsf": "0.0.0",
+    "musl-sysroot-x86_64-linux-musl": "0.0.0"
+  },
+  "devDependencies": {
+    "cmake-fetch": "^1.4.9",
+    "lunte": "^1.8.4",
+    "prettier": "^3.6.2",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
