@@ -13,7 +13,7 @@ set(MUSL_SYSROOT_KERNEL_VERSION "6.12.112" CACHE STRING "The Linux kernel releas
 
 # Must match the release of the `llvm-runtime` compiler, as libc++ depends on
 # the exact compiler it is built with.
-set(MUSL_SYSROOT_LLVM_VERSION "23.1.2" CACHE STRING "The LLVM release to build the C++ libraries from")
+set(MUSL_SYSROOT_LLVM_VERSION "23.1.3" CACHE STRING "The LLVM release to build the C++ libraries from")
 
 set(
   MUSL_SYSROOT_TARGETS
@@ -37,6 +37,9 @@ fetch_package(
   "https://musl.libc.org/releases/musl-${MUSL_SYSROOT_MUSL_VERSION}.tar.gz"
   SOURCE_DIR libc_source
   SOURCE_SUBDIR fetch-only
+  PATCHES
+    patches/01-qsort-cve-2026-40200.patch
+    patches/02-iconv-cve-2026-6042.patch
 )
 
 string(REGEX MATCH "^[0-9]+" kernel_major "${MUSL_SYSROOT_KERNEL_VERSION}")
